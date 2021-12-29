@@ -1,0 +1,14 @@
+query RepositoryList {
+  search(query: "topic:ios", type: REPOSITORY, last: 50) {
+    edges {
+      node {
+        ... on Repository {
+          id
+          name
+          stargazerCount
+        }
+      }
+    }
+  }
+}
+
