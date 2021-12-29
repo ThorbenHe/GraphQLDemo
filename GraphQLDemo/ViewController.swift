@@ -37,11 +37,19 @@ class ViewController: UIViewController,  UITableViewDataSource {
         
         cell.repoName?.text = repo["name"]!! as? String
         cell.starCount?.text = String((repo["stargazerCount"]!! as? Int)!)
-
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        
         return cell
     }
     
     private func loadRepositories() {
+        let spinner = SpinnerViewController()
+        
+        addChild(spinner)
+        spinner.view.frame = view.frame
+        view.addSubview(spinner.view)
+        spinner.didMove(toParent: self)
+        
         Network.shared.apollo
             .fetch(query: RepositoryListQuery()) { [weak self] result in
                 
@@ -68,15 +76,19 @@ class ViewController: UIViewController,  UITableViewDataSource {
                 case .failure(let error):
                     self.showAlert(title: "Network Error", message: error.localizedDescription)
                 }
+                
+                spinner.willMove(toParent: nil)
+                spinner.view.removeFromSuperview()
+                spinner.removeFromParent()
             }
     }
     
     func showAlert(title: String, message: String) {
-            let alert = UIAlertController(title: title,
-                                          message: message,
-                                          preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
-            self.present(alert, animated: true)
-        }
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
+    }
 }
 

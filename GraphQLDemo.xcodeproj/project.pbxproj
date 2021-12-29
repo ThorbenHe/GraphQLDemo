@@ -11,6 +11,7 @@
 		181F3C18277C585E0065906E /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F3C17277C585E0065906E /* NetworkInterceptorProvider.swift */; };
 		181F3C1C277C7BCF0065906E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F3C1A277C7BCF0065906E /* TableViewCell.swift */; };
 		181F3C1D277C7BCF0065906E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F3C1B277C7BCF0065906E /* TableViewCell.xib */; };
+		181F3C1F277CA3890065906E /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F3C1E277CA3890065906E /* Spinner.swift */; };
 		18A59763277B6A1B00AF7928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A59762277B6A1B00AF7928 /* AppDelegate.swift */; };
 		18A59765277B6A1B00AF7928 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A59764277B6A1B00AF7928 /* SceneDelegate.swift */; };
 		18A59767277B6A1B00AF7928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A59766277B6A1B00AF7928 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		181F3C17277C585E0065906E /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
 		181F3C1A277C7BCF0065906E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		181F3C1B277C7BCF0065906E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		181F3C1E277CA3890065906E /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		18A5975F277B6A1B00AF7928 /* GraphQLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphQLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A59762277B6A1B00AF7928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A59764277B6A1B00AF7928 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				181F3C1A277C7BCF0065906E /* TableViewCell.swift */,
 				181F3C1B277C7BCF0065906E /* TableViewCell.xib */,
 				18A59768277B6A1B00AF7928 /* Main.storyboard */,
+				181F3C1E277CA3890065906E /* Spinner.swift */,
 				18A5976B277B6A1C00AF7928 /* Assets.xcassets */,
 				18A5976D277B6A1C00AF7928 /* LaunchScreen.storyboard */,
 				18A59770277B6A1C00AF7928 /* Info.plist */,
@@ -317,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A5979E277B7B0900AF7928 /* Network.swift in Sources */,
+				181F3C1F277CA3890065906E /* Spinner.swift in Sources */,
 				181F3C1C277C7BCF0065906E /* TableViewCell.swift in Sources */,
 				18A59767277B6A1B00AF7928 /* ViewController.swift in Sources */,
 				181F3C18277C585E0065906E /* NetworkInterceptorProvider.swift in Sources */,
